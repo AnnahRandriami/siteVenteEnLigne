@@ -1,4 +1,6 @@
 <?php 
+
+// compteUtilisateur phpmyadmin
 define("DB_USER", "root");
 define ("DB_PASSWORD" , "root123");
 define("HOST", "localhost");

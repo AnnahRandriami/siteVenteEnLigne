@@ -1,5 +1,5 @@
 <?php 
-//creation de constante utiliser dans le model 
+//creation de constante utiliser pour le lien des dossier
 define("SRC" ,  dirname(__FILE__));
 define("ROOT" ,  dirname(SRC));
 define("SP" ,  DIRECTORY_SEPARATOR);

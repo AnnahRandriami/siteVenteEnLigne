@@ -3,7 +3,7 @@ require "include.php";
  // tranforme le PATH_INFO en tableau avec le nom de chaque page
 $url = trim($_SERVER['PATH_INFO'], '/');
     $url = explode('/', $url);
-    $route = array("acceuil", "contact");
+    $route = array("acceuil", "contact" , "produit");
     $action = $url [0];
 
     // recupere la  première page du site 

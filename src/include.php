@@ -6,13 +6,14 @@ define("SP" ,  DIRECTORY_SEPARATOR);
 define("CONFIG", ROOT.SP."config");
 define("VIEWS", ROOT.SP."views");
 define("MODEL", ROOT.SP."model");
+define("BASE_URL", dirname($_SERVER['REQUEST_URI']));
 
 // liaison avec config et datalayer
 require CONFIG.SP."config.php";
 require MODEL.SP."DataLayer.class.php";
 
 $model = new DataLayer();
-exit();
+
 /* affiche sur l'ecran le chemin 
 print_r(array(VIEWS, MODEL)); exit; */
 

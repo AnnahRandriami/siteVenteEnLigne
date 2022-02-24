@@ -5,15 +5,29 @@ function displayAcceuil(){
 }
 
 function displayContact(){
+    return '<h1> Bienvenue sur le page de contact </h1>';
+}
+
+function displayProduit(){
     global $model; 
-    $result = '<h1> Bienvenue sur le page de contact </h1>';
-  $dataProduct = $model->getProduct();
-  print_r()
-
-
-
-
-    return = $result;
+    $dataProduct = $model->getProduct();
+    //Affichage product avec photo
+    $result = '<h1> Bienvenue sur le page Produit </h1>';
+foreach ($dataProduct as $key => $value) {
+    $result .= '<div class="card" style="width: 18rem; display:inline-block;">
+  <img src="'.BASE_URL.SP."image".SP.produit.SP.$value["image"].'" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">'.$value["name"].'</h5>
+    <p class="card-text">'.$value["description"].'</p>
+    <a href="#" class="btn btn-primary">Acheter</a>
+    <a href="#" class="btn btn-primary">Details</a>
+  </div>
+</div>'; 
+}
+    
+    return $result;
 }
 
 ?>
+
+

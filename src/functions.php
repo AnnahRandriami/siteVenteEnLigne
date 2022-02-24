@@ -5,7 +5,15 @@ function displayAcceuil(){
 }
 
 function displayContact(){
-    return '<h1> Bienvenue sur le page de contact </h1>';
+    global $model; 
+    $result = '<h1> Bienvenue sur le page de contact </h1>';
+  $dataProduct = $model->getProduct();
+  print_r()
+
+
+
+
+    return = $result;
 }
 
 ?>

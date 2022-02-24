@@ -11,7 +11,7 @@ define("MODEL", ROOT.SP."model");
 require CONFIG.SP."config.php";
 require MODEL.SP."DataLayer.class.php";
 
-$data = new DataLayer();
+$model = new DataLayer();
 exit();
 /* affiche sur l'ecran le chemin 
 print_r(array(VIEWS, MODEL)); exit; */

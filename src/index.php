@@ -3,13 +3,13 @@ require "include.php";
  // tranforme le PATH_INFO en tableau avec le nom de chaque page
 $url = trim($_SERVER['PATH_INFO'], '/');
     $url = explode('/', $url);
-    $route = array("acceuil", "contact");
+    $route = array("acceuil", "contact" , "produit");
     $action = $url [0];
 
     // recupere la  première page du site 
     if(!in_array($action,$route)){
         $title = "Page error";
-        $content = "URL introuvable !";
+        $content = " <h2>Ooooups</h2>URL introuvable !";
     }else{
        // affichage de la page selectionner
        $function = "display".ucwords($action);

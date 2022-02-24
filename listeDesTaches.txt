@@ -1,0 +1,11 @@
+Boutique : 
+   - Affichage des produits -> getProduct();
+   -Affichage des catégories -> getCategory();
+
+
+Customers : 
+   -Register  -> createCustomers ();
+   -Login     -> login();
+   -Achat      -> createOrders();
+   -Mise à jour des infos -> uptadeInfoCustomers();
+   -Suppression du compte  ->deleteCustomers();

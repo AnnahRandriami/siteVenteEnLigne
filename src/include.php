@@ -11,12 +11,35 @@ define("MODEL", ROOT.SP."model");
 require CONFIG.SP."config.php";
 require MODEL.SP."DataLayer.class.php";
 
-$data = new DataLayer();
-exit();
-/* affiche sur l'ecran le chemin 
-print_r(array(VIEWS, MODEL)); exit; */
 
-//liason avec functions.php
+//lancement functions 
+$data = new DataLayer(); 
+//ajout customers
+//$var = $data -> createCustomers('sexe', 'firstname', 'lastname', 'phone', 'passwords','pseudo', 'email');
+//test login
+
+//$auten = $data -> login('salom@gmail.com','salom');
+//print_r($var); exit();
+
+//create order
+//$var = $data -> createOrders( '13' , '1', '10', '1');
+//print_r($var);
+
+//uptade customers
+//$var = $data-> uptadeInfoCustomers(array('idcustomers'=>13,'pseudo'=>'jmpn','firstname'=>'houONT'));
+
+//select category
+//$category = $data->getCategory();
+//print_r($category); exit();
+
+
+// select product
+//$product = $data-> getProduct(1);
+//var_dump($product); exit();
+
+
+
+//liason avec functions.php*
 require "functions.php";
 
 

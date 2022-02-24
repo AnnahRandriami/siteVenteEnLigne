@@ -5,7 +5,11 @@ function displayAcceuil(){
 }
 
 function displayContact(){
-    return '<h1> Bienvenue sur le page de contact </h1>';
+    return '<h1> Bienvenue sur la page de contact </h1>';
+}
+
+function displayProduit(){
+    return '<h1> Bienvenue sur la page produits </h1>';
 }
 
 ?>

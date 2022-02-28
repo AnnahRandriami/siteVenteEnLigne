@@ -13,6 +13,8 @@ require CONFIG.SP."config.php";
 require MODEL.SP."DataLayer.class.php";
 
 $model = new DataLayer();
+$category = $model->getCategory();
+
 
 /* affiche sur l'ecran le chemin 
 print_r(array(VIEWS, MODEL)); exit; */

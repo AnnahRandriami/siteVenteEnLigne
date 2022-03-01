@@ -123,12 +123,16 @@ function getCategory(){
 
 }
 
-function getProduct($limit=NULL){
+function getProduct($limit=NULL , $category=NULL){
     $sql = "SELECT * FROM product ";
     try {
+        if(!is_null($category)){
+            $sql .= 'WHERE idCategory = ' .$category;
+       }
         if(!is_null($limit)){
-             $sql .= 'LIMIT ' .$limit;
+             $sql .= ' LIMIT ' .$limit;
         }
+        //print_r($sql); exit();
         $result = $this->connexion->prepare($sql);
         $var = $result->execute();
         //recup tout les elements

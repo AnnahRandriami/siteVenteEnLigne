@@ -62,7 +62,7 @@
 </nav>
 
  <!--content-->
-<div class="container">
+<div class="container" >
     <?php echo $content ?>
 </div>
 

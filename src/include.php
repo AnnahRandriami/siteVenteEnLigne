@@ -6,7 +6,7 @@ define("SP" ,  DIRECTORY_SEPARATOR);
 define("CONFIG", ROOT.SP."config");
 define("VIEWS", ROOT.SP."views");
 define("MODEL", ROOT.SP."model");
-define("BASE_URL", dirname($_SERVER['REQUEST_URI']));
+define("BASE_URL", dirname(dirname($_SERVER['SCRIPT_NAME'])));
 
 // liaison avec config et datalayer
 require CONFIG.SP."config.php";
@@ -14,7 +14,8 @@ require MODEL.SP."DataLayer.class.php";
 
 $model = new DataLayer();
 $category = $model->getCategory();
-
+//$data = $model->getProduct(5,1);
+//print_r($data);exit();
 
 /* affiche sur l'ecran le chemin 
 print_r(array(VIEWS, MODEL)); exit; */
